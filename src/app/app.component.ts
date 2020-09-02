@@ -11,16 +11,18 @@ export class AppComponent implements OnInit {
   @ViewChild('agGrid') agGrid: AgGridAngular;
   title = 'ag-grid-samples';
   columnDefs = [
-    {
-      headerName: 'Make',
-      field: 'make',
-      sortable: true,
-      filter: true,
-      checkboxSelection: true,
-    },
-    { headerName: 'Model', field: 'model', sortable: true, filter: true },
-    { headerName: 'Price', field: 'price', sortable: true, filter: true },
+    { headerName: 'Make', field: 'make', rowGroup: true },
+    { headerName: 'Price', field: 'price' },
   ];
+
+  autoGroupColumnDef = {
+    headerName: 'Model',
+    field: 'model',
+    cellRenderer: 'agGroupCellRenderer',
+    cellRendererParams: {
+      checkbox: true,
+    },
+  };
   rowData: any;
 
   constructor(private http: HttpClient) {}
