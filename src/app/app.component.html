@@ -1,4 +1,42 @@
-<button (click)="getSelectedRows()">Get Selected Rows</button>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1>AG Grid Sample App</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/simplegrid'">Simple Grid</a>
+      <a mat-button [routerLink]="'/chartgrid'">Extended Chart</a>
+    </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span style="font-size: 12px;">
+      AG Grid Sample Application to test out new features
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+
+      <a mat-button [routerLink]="'/simplegrid'">Simple Grid</a>
+      <a mat-button [routerLink]="'/chartgrid'">Extended Chart</a>
+      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<button (click)="getSelectedRows()">Get Selected
+  Rows</button>
 <ag-grid-angular #agGrid style="width: 500px; height: 500px" class="ag-theme-alpine"
   [autoGroupColumnDef]="autoGroupColumnDef" [rowData]="rowData | async"
   [columnDefs]="columnDefs" rowSelection="multiple">

@@ -45,3 +45,6 @@ npm i -D rimraf
 npm i -D yargs
 
 npx mrm angular-vscode
+
+npm i @angular/material
+npm i @angular/flex-layout
