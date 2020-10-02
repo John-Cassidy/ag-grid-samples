@@ -27,3 +27,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## VSCode extensions and settings
+
+npm i -D angular-unit-test-helper
+npm i -D dev-norms
+npm i -D dotenv
+npm i -D npm-run-all
+
+npm i -D prettier tslint-config-prettier tslint-plugin-prettier
+npm i -D js-beautify
+npm i -D import-sort import-sort-cli import-sort-parser-typescript import-sort-style-module
+npm i -D tslint tslint-etc
+
+npm i -D open-cli
+npm i -D rimraf
+npm i -D yargs
+
+npx mrm angular-vscode
