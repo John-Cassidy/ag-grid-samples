@@ -49,6 +49,15 @@ npx mrm angular-vscode
 npm i @angular/material
 npm i @angular/flex-layout
 
+## ag-Grid | ag-Chart
+
+npm i --save ag-grid-community g-grid-enterprise ag-grid-angular
+npm i --save @ag-grid-enterprise/all-modules
+
+npm i --save ag-charts-community ag-charts-angular
+
+npm i --save @ag-grid-enterprise/charts
+
 ## Commands
 
 Run the following commands before committing your code to ensure styles and linting properly applied to the project:
@@ -60,4 +69,5 @@ npm run lint:fix - automatically fix auto-fixable linting errors
 
 npx ng g c home -m app --inline-template --inline-style
 npx ng g c simplegrid -m app --inline-style
-npm ng g c chartgrid -m app --inline-style
+npx ng g c chartgrid -m app --inline-style
+npx ng g c simplechart -m app --inline-style
