@@ -6,6 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { AgChartsAngularModule } from 'ag-charts-angular'
 import { AgGridModule } from 'ag-grid-angular'
 
 import { AppRoutingModule } from './app-routing.module'
@@ -33,6 +34,7 @@ import { SimplegridComponent } from './simplegrid/simplegrid.component'
     HttpClientModule,
     AppRoutingModule,
     AgGridModule.withComponents([]),
+    AgChartsAngularModule,
     BrowserAnimationsModule,
   ],
   providers: [],
