@@ -10,8 +10,8 @@ import { AgGridModule } from 'ag-grid-angular'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { MaterialModule } from './material.module';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component'
+import { MaterialModule } from './material.module'
 import { SimplegridComponent } from './simplegrid/simplegrid.component'
 
 @NgModule({
