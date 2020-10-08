@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 
+import { ChartgridComponent } from './chartgrid/chartgrid.component'
 import { HomeComponent } from './home/home.component'
 import { SimplegridComponent } from './simplegrid/simplegrid.component'
 
@@ -8,6 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'simplegrid', component: SimplegridComponent },
+  { path: 'chartgrid', component: ChartgridComponent },
   // {
   //   path: 'manager',
   //   loadChildren: () =>

@@ -60,3 +60,4 @@ npm run lint:fix - automatically fix auto-fixable linting errors
 
 npx ng g c home -m app --inline-template --inline-style
 npx ng g c simplegrid -m app --inline-style
+npm ng g c chartgrid -m app --inline-style

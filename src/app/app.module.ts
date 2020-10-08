@@ -12,10 +12,11 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HomeComponent } from './home/home.component'
 import { MaterialModule } from './material.module'
-import { SimplegridComponent } from './simplegrid/simplegrid.component'
+import { SimplegridComponent } from './simplegrid/simplegrid.component';
+import { ChartgridComponent } from './chartgrid/chartgrid.component'
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SimplegridComponent],
+  declarations: [AppComponent, HomeComponent, SimplegridComponent, ChartgridComponent],
   imports: [
     BrowserModule,
     MaterialModule,
