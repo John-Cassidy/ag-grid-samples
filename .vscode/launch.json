@@ -2,39 +2,35 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug npm start with Chrome",
+      "name": "Debug with Chrome",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:5000/#",
+      "url": "http://localhost:4200/#",
       "webRoot": "${workspaceRoot}",
-      "runtimeArgs": [
-        "--remote-debugging-port=9222"
-      ],
+      "runtimeArgs": ["--remote-debugging-port=9222"],
       "sourceMaps": true
     },
     {
-      "name": "Debug npm start with Edge",
+      "name": "Debug start with Edge",
       "type": "edge",
       "request": "launch",
-      "url": "http://localhost:5000/#",
+      "url": "http://localhost:4200/#",
       "webRoot": "${workspaceRoot}",
       "sourceMaps": true,
       "preLaunchTask": "npm: start"
     },
     {
-      "name": "Debug npm test with Chrome",
+      "name": "Debug test with Chrome",
       "type": "chrome",
       "request": "launch",
       "url": "http://localhost:9876/debug.html",
       "webRoot": "${workspaceRoot}",
-      "runtimeArgs": [
-        "--remote-debugging-port=9222"
-      ],
+      "runtimeArgs": ["--remote-debugging-port=9222"],
       "sourceMaps": true,
       "preLaunchTask": "npm: test"
     },
     {
-      "name": "Debug npm test with Edge",
+      "name": "Debug test with Edge",
       "type": "edge",
       "request": "launch",
       "url": "http://localhost:9876/debug.html",
@@ -48,19 +44,15 @@
       "request": "launch",
       "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
       "protocol": "inspector",
-      "args": [
-        "${workspaceRoot}/protractor.conf.js"
-      ]
+      "args": ["${workspaceRoot}/protractor.conf.js"]
     },
     {
-      "name": "Debug npm start with Chrome",
+      "name": "Debug start with Chrome",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:5000/#",
+      "url": "http://localhost:4200/#",
       "webRoot": "${workspaceRoot}",
-      "runtimeArgs": [
-        "--remote-debugging-port=9222"
-      ],
+      "runtimeArgs": ["--remote-debugging-port=9222"],
       "sourceMaps": true,
       "preLaunchTask": "npm: start"
     }

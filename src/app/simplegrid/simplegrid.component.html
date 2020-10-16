@@ -1,7 +1,8 @@
 <div style='height: 100%; display: flex; flex-direction: column;'>
   <div [ngStyle]="style">
     <ag-grid-angular style="width: 100%; height:100%;" #agGrid [rowData]="rowData"
-      class="ag-theme-alpine" [columnDefs]="columnDefs">
+      [columnDefs]="columnDefs" enableRangeSelection="true" rowSelection="multiple"
+      [enableCharts]="true" class="ag-theme-alpine">
     </ag-grid-angular>
   </div>
 </div>

@@ -12,6 +12,7 @@ import { AgGridModule } from 'ag-grid-angular'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { ChartgridComponent } from './chartgrid/chartgrid.component'
+import { GroupedchartComponent } from './groupedchart/groupedchart.component'
 import { HomeComponent } from './home/home.component'
 import { MaterialModule } from './material.module'
 import { SimplechartComponent } from './simplechart/simplechart.component'
@@ -24,6 +25,7 @@ import { SimplegridComponent } from './simplegrid/simplegrid.component'
     SimplegridComponent,
     ChartgridComponent,
     SimplechartComponent,
+    GroupedchartComponent,
   ],
   imports: [
     BrowserModule,

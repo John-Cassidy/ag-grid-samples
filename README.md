@@ -71,3 +71,4 @@ npx ng g c home -m app --inline-template --inline-style
 npx ng g c simplegrid -m app --inline-style
 npx ng g c chartgrid -m app --inline-style
 npx ng g c simplechart -m app --inline-style
+npx ng g c groupedchart -m app --inline-style

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 
 import { ChartgridComponent } from './chartgrid/chartgrid.component'
+import { GroupedchartComponent } from './groupedchart/groupedchart.component'
 import { HomeComponent } from './home/home.component'
 import { SimplechartComponent } from './simplechart/simplechart.component'
 import { SimplegridComponent } from './simplegrid/simplegrid.component'
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'simplegrid', component: SimplegridComponent },
   { path: 'simplechart', component: SimplechartComponent },
+  { path: 'groupedchart', component: GroupedchartComponent },
   { path: 'chartgrid', component: ChartgridComponent },
   // {
   //   path: 'manager',
